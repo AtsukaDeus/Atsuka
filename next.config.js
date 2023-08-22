@@ -1,9 +1,4 @@
 /** @type {import('next').NextConfig} */
+const nextConfig = {}
 
-export const target = 'static';
-export async function exportPathMap() {
-    return {
-        '/': { page: '/' },
-        // Agrega aquí otras rutas que desees exportar
-    };
-}
+module.exports = nextConfig
