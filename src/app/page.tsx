@@ -3,6 +3,34 @@
 import Image from "next/image";
 import { useState } from "react";
 
+import img_cert_anali_plan from '../../public/img/certificaciones/certificacion-analisis-planificacion.png';
+import img_cert_python from '../../public/img/certificaciones/certificacion-python.jpg';
+
+import img_proy_skyrim from '../../public/img/proyectos/ImgSkyProj.png';
+import img_proy_sukivet from '../../public/img/proyectos/imgSukiVet.png';
+
+import icon_bootstrap from '../../public/img/tecnologias/bootstrapIcon.png';
+import icon_cpp from '../../public/img/tecnologias/cppIcon.png';
+import icon_css from '../../public/img/tecnologias/cssIcon.png';
+import icon_django from '../../public/img/tecnologias/djangoIcon.png';
+import icon_html from '../../public/img/tecnologias/htmlIcon.png';
+import icon_ionic from '../../public/img/tecnologias/ionicIcon.png';
+import icon_java from '../../public/img/tecnologias/javaIcon.png';
+import icon_js from '../../public/img/tecnologias/jsIcon.png';
+import icon_node from '../../public/img/tecnologias/nodeIcon.png';
+import icon_oracle from '../../public/img/tecnologias/oracleDevIcon.png';
+import icon_postgres from '../../public/img/tecnologias/postgresIcon.png';
+import icon_python from '../../public/img/tecnologias/pythonIcon.png';
+import icon_react from '../../public/img/tecnologias/reactIcon.png';
+import icon_tailwind from '../../public/img/tecnologias/tailwindIcon.png';
+
+import icon_github from '../../public/img/githubIcon.png';
+import icon_gmail from '../../public/img/gmailIcon.png';
+import icon_linkedin from '../../public/img/lnkIcon.png';
+import icon_foto_perfil from '../../public/img/lnkphoto.png';
+import icon_wsp from '../../public/img/wspIcon.png';
+
+
 
 
 export default function Home() {
@@ -18,10 +46,10 @@ export default function Home() {
       
       <div className="-mt-10 mb-20 flex justify-end w-full">
         <a href="https://github.com/AtsukaDeus" target="_blank">
-          <Image className="mr-5 transition delay-75 duration-300 ease-in-out hover:rotate-45 shadow-lg shadow-indigo-500/50 rounded-full" src={"/img/lnkIcon.png"} alt="imgIconoLnk" width={50} height={50}></Image>
+          <Image className="mr-5 transition delay-75 duration-300 ease-in-out hover:rotate-45 shadow-lg shadow-indigo-500/50 rounded-full" src={icon_github} alt="imgIconoGitHub" width={50} height={50}></Image>
         </a>
         <a href="https://www.linkedin.com/in/fcomaths/" target="_blank">  
-          <Image className="mr-5 transition delay-75 duration-300 ease-in-out hover:rotate-45 shadow-lg shadow-indigo-500/50 rounded-full" src={"/img/githubIcon.png"} alt="imgIconoGitHub" width={50} height={50}></Image>
+          <Image className="mr-5 transition delay-75 duration-300 ease-in-out hover:rotate-45 shadow-lg shadow-indigo-500/50 rounded-full" src={icon_linkedin} alt="imgIconoLnk" width={50} height={50}></Image>
         </a>
       </div>
       
@@ -31,14 +59,14 @@ export default function Home() {
       </h1>
 
       <div className="relative mt-10 group">
-        <Image className="rounded-full transition duration-300 ease-in-out transform group-hover:-translate-x-5 border-2 border-zinc-500 group-hover:border-cyan-400" src={"/img/lnkphoto.png"} alt="imgFrancisco" width={300} height={300} />
+        <Image className="rounded-full transition duration-300 ease-in-out transform group-hover:-translate-x-5 border-2 border-zinc-500 group-hover:border-cyan-400" src={icon_foto_perfil} alt="imgFrancisco" width={300} height={300} />
 
         <div className="right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 pr-10 rounded-md opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
           <div className="flex mb-2">
-              <Image className="mr-5" src={"/img/gmailIcon.png"} alt="gmailIcon" width={25} height={20}></Image><span className="text-neutral-300">fcomaths@gmail.com</span><br />
+              <Image className="mr-5" src={icon_gmail} alt="gmailIcon" width={25} height={20}></Image><span className="text-neutral-300">fcomaths@gmail.com</span><br />
           </div>
           <div className="flex">
-              <Image className="mr-5" src={"/img/wspIcon.png"} alt="wspIcon" width={25} height={20}></Image><span className="text-neutral-300">+569 2020 8745</span>
+              <Image className="mr-5" src={icon_wsp} alt="wspIcon" width={25} height={20}></Image><span className="text-neutral-300">+569 2020 8745</span>
           </div>
           
         </div>
@@ -53,20 +81,20 @@ export default function Home() {
       </div>
 
       <div className="mt-20 grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-10 gap-10 mt-10">
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={"/img/tecnologias/pythonIcon.png"} alt="imgIconoPython" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={"/img/tecnologias/djangoIcon.png"} alt="imgIconoDjango" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={"/img/tecnologias/cppIcon.png"} alt="imgIconoCpp" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={"/img/tecnologias/javaIcon.png"} alt="imgIconoJava" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={"/img/tecnologias/htmlIcon.png"} alt="imgIconoHtml" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={"/img/tecnologias/cssIcon.png"} alt="imgIconoCss" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={"/img/tecnologias/jsIcon.png"} alt="imgIconoJs" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={"/img/tecnologias/nodeIcon.png"} alt="imgIconoNodejs" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={"/img/tecnologias/oracleDevIcon.png"} alt="imgIconoOracleDev" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={"/img/tecnologias/postgresIcon.png"} alt="imgPostgresIcon" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={"/img/tecnologias/ionicIcon.png"} alt="imgIonicIcon" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={"/img/tecnologias/reactIcon.png"} alt="imgReacIcon" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={"/img/tecnologias/bootstrapIcon.png"} alt="imgBootstrapIcon" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={"/img/tecnologias/tailwindIcon.png"} alt="imgTailwindIcon" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_python} alt="imgIconoPython" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_django} alt="imgIconoDjango" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_cpp} alt="imgIconoCpp" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_java} alt="imgIconoJava" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_html} alt="imgIconoHtml" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_css} alt="imgIconoCss" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_js} alt="imgIconoJs" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_node} alt="imgIconoNodejs" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_oracle} alt="imgIconoOracleDev" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_postgres} alt="imgPostgresIcon" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_ionic} alt="imgIonicIcon" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_react} alt="imgReacIcon" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_bootstrap} alt="imgBootstrapIcon" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_tailwind} alt="imgTailwindIcon" width={50} height={50}></Image>
       </div>
       
       <div className="mt-20">
@@ -77,10 +105,10 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 ">
               <a href="https://github.com/AtsukaDeus/Suki-Vet" target="_blanck">
-                  <Image className="rounded-md transition duration-300 ease-in-out hover:scale-110 shadow-lg shadow-cyan-500/50" src={"/img/proyectos/imgSukiVet.png"} alt="imgSukiVet" width={300} height={150}></Image>
+                  <Image className="rounded-md transition duration-300 ease-in-out hover:scale-110 shadow-lg shadow-cyan-500/50" src={img_proy_sukivet} alt="imgSukiVet" width={300} height={150}></Image>
               </a>
               <a href="https://github.com/AtsukaDeus/Proyecto_Skyrim"  target="_blanck">
-                  <Image className="rounded-md transition duration-300 ease-in-out hover:scale-110 shadow-lg shadow-cyan-500/50" src={"/img/proyectos/imgSkyProj.png"} alt="imgSkyProj" width={300} height={150}></Image>
+                  <Image className="rounded-md transition duration-300 ease-in-out hover:scale-110 shadow-lg shadow-cyan-500/50" src={img_proy_skyrim} alt="imgSkyProj" width={300} height={150}></Image>
               </a>
               
           </div>
@@ -91,7 +119,7 @@ export default function Home() {
           <div className="flex text-center justify-center">
             <h1 className="text-2xl font-sans text-center text-neutral-300">Experiencia Laboral</h1>
             <button className="bg-teal-700 hover:bg-teal-500 text-white font-bold py-1 px-4 rounded ml-5" onClick={toggleDiv}>
-              {mostrarDiv ? "￬" : "↑"}
+              {mostrarDiv ? "▼" : "▲"}
             </button>
           </div>
 
@@ -148,10 +176,10 @@ export default function Home() {
           <h1 className="mt-20 text-2xl font-sans text-center text-neutral-300">Certificaciones</h1>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 ">
               <a href="https://drive.google.com/file/d/1-hAXIUR9URW7-ECOq3vsUmfkqChHLvmc/view?pli=1" target="_blanck">
-                  <Image className="rounded-md transition duration-300 ease-in-out hover:scale-110 shadow-lg shadow-yellow-400/50" src={"/img/certificaciones/certificacion-analisis-planificacion.png"} alt="imgCertAnalisis" width={300} height={150}></Image>
+                  <Image className="rounded-md transition duration-300 ease-in-out hover:scale-110 shadow-lg shadow-yellow-400/50" src={img_cert_anali_plan} alt="imgCertAnalisis" width={300} height={150}></Image>
               </a>
               <a href="https://www.udemy.com/certificate/UC-371d9ef6-2cf7-4945-8d3a-098042ad7ce1/"  target="_blanck">
-                  <Image className="rounded-md transition duration-300 ease-in-out hover:scale-110 shadow-lg shadow-yellow-400/50" src={"/img/certificaciones/certificacion-python.jpg"} alt="imgCertPython" width={300} height={150}></Image>
+                  <Image className="rounded-md transition duration-300 ease-in-out hover:scale-110 shadow-lg shadow-yellow-400/50" src={img_cert_python} alt="imgCertPython" width={300} height={150}></Image>
               </a>
               
               
