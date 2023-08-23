@@ -42,7 +42,7 @@ export default function Home() {
   
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="bg-black flex min-h-screen flex-col items-center justify-between p-24">
       
       <div className="-mt-10 mb-20 flex justify-end w-full">
         <a href="https://github.com/AtsukaDeus" target="_blank">
