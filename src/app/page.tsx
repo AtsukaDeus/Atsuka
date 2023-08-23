@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image";
+import Link from 'next/link';
 import { useState } from "react";
 
 import img_cert_anali_plan from '../../public/img/certificaciones/certificacion-analisis-planificacion.png';
@@ -76,6 +77,11 @@ export default function Home() {
 
 
       <div className="mt-10">
+        <div className="flex mb-5">
+          <p>Pincha en el botón para ver mi curriculum 👉</p>
+          <Link className="ml-2 h-7 text-center bg-blue-700 px-6 rounded-md transition delay-200 hover:-translate-y-1 hover:bg-blue-500 " href={"/PDF/Curriculum-Francisco.pdf"} target="_blank" rel="noopener noreferrer">Ver</Link>
+        </div>
+
         <p className="text-neutral-300">En este momento me encuentro estudiando <span className="text-teal-400">Ingeniería Informática </span> 
           en <span className="text-amber-300">Duoc UC.</span> Además te quiero comentar que poseo <br />experiencia en las siguientes
           tecnologías:
@@ -120,7 +126,7 @@ export default function Home() {
 
           <div className="flex text-center justify-center">
             <h1 className="text-2xl font-sans text-center text-neutral-300">Experiencia Laboral</h1>
-            <button className="bg-teal-700 hover:bg-teal-500 text-white font-bold py-1 px-4 rounded ml-5" onClick={toggleDiv}>
+            <button className="bg-teal-700 h-8 hover:bg-teal-500 text-white font-bold py-1 px-4 rounded ml-5" onClick={toggleDiv}>
               {mostrarDiv ? "▼" : "▲"}
             </button>
           </div>
