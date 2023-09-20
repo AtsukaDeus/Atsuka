@@ -37,15 +37,11 @@ import icon_wsp from '../../public/img/wspIcon.png';
 
 
 export default function Home() {
-  const [mostrarDiv, setMostrarDiv] = useState(false);
 
-  const toggleDiv = () => {
-    setMostrarDiv(!mostrarDiv);
-  };
   
 
   return (
-    <main className="bg-black flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="bg-black flex min-h-screen flex-col items-center justify-between md:p-24 px-[50px] py-24">
       
       <div className="-mt-10 mb-20 flex justify-end w-full">
         <a href="https://github.com/AtsukaDeus" target="_blank">
@@ -88,21 +84,21 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="mt-20 grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-10 gap-10 mt-10">
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_python} alt="imgIconoPython" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_django} alt="imgIconoDjango" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_cpp} alt="imgIconoCpp" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_java} alt="imgIconoJava" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_html} alt="imgIconoHtml" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_css} alt="imgIconoCss" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_js} alt="imgIconoJs" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_node} alt="imgIconoNodejs" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_oracle} alt="imgIconoOracleDev" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_postgres} alt="imgPostgresIcon" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_ionic} alt="imgIonicIcon" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_react} alt="imgReacIcon" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_bootstrap} alt="imgBootstrapIcon" width={50} height={50}></Image>
-        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-180 hover:skew-y-12" src={icon_tailwind} alt="imgTailwindIcon" width={50} height={50}></Image>
+      <div className="mt-20 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-10 gap-10 mt-10">
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-45 hover:skew-y-12" src={icon_python} alt="imgIconoPython" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-45 hover:skew-y-12" src={icon_django} alt="imgIconoDjango" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-45 hover:skew-y-12" src={icon_cpp} alt="imgIconoCpp" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-45 hover:skew-y-12" src={icon_java} alt="imgIconoJava" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-45 hover:skew-y-12" src={icon_html} alt="imgIconoHtml" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-45 hover:skew-y-12" src={icon_css} alt="imgIconoCss" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-45 hover:skew-y-12" src={icon_js} alt="imgIconoJs" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-45 hover:skew-y-12" src={icon_node} alt="imgIconoNodejs" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-45 hover:skew-y-12" src={icon_oracle} alt="imgIconoOracleDev" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-45 hover:skew-y-12" src={icon_postgres} alt="imgPostgresIcon" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-45 hover:skew-y-12" src={icon_ionic} alt="imgIonicIcon" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-45 hover:skew-y-12" src={icon_react} alt="imgReacIcon" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-45 hover:skew-y-12" src={icon_bootstrap} alt="imgBootstrapIcon" width={50} height={50}></Image>
+        <Image className="transition delay-75 duration-300 ease-in-out hover:rotate-45 hover:skew-y-12" src={icon_tailwind} alt="imgTailwindIcon" width={50} height={50}></Image>
       </div>
       
       <div className="mt-20">
@@ -126,14 +122,9 @@ export default function Home() {
 
           <div className="flex text-center justify-center">
             <h1 className="text-2xl font-sans text-center text-neutral-300">Experiencia Laboral</h1>
-            <button className="bg-teal-700 h-8 hover:bg-teal-500 text-white font-bold py-1 px-4 rounded ml-5" onClick={toggleDiv}>
-              {mostrarDiv ? "▼" : "▲"}
-            </button>
           </div>
 
-
-          {!mostrarDiv && (
-          <div className="mt-10">
+          <div className="mt-10 md:w-4/5 md:ml-[150px]">
                 <p className="text-gray-400">
                   <span className="underline text-lg text-neutral-300">Citröen Chile</span> <br />
                   <span className="text-orange-300">Apoyo administrativo post venta</span> <span className="text-teal-300">- 2023</span> <br />
@@ -176,8 +167,6 @@ export default function Home() {
                   • Realizar formularios de pagos de impuestos en el SII, y pago de cotizaciones en PreviRed. <br />
                 </p>
           </div>
-
-          )}
       </div>
       
       <div>
